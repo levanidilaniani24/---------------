@@ -249,3 +249,124 @@ body {
   border: 1px solid var(--card-border);
   position: relative;
 }
+.services-section {
+  padding: 100px 0;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  padding: 35px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--primary-color);
+}
+
+.icon-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 14px;
+  background: rgba(59, 130, 246, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.icon-box i {
+  font-size: 26px;
+  color: var(--primary-color);
+}
+
+.service-card h3 {
+  color: var(--heading-color);
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+.projects-section {
+  padding: 100px 0;
+}
+
+.category-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 10px 22px;
+  border: 1px solid var(--card-border);
+  background: var(--card-bg);
+  color: var(--text-color);
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.filter-btn.active, .filter-btn:hover {
+  background: var(--primary-gradient);
+  color: #fff;
+  border-color: transparent;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 20px;
+  padding: 18px;
+  transition: all 0.3s ease;
+}
+
+.project-card.hide {
+  display: none !important;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--primary-color);
+}
+
+.card-img {
+  width: 100%;
+  height: 220px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-body span {
+  color: var(--primary-color);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.card-body h3 {
+  color: var(--heading-color);
+  font-size: 18px;
+  margin-top: 6px;
+}
