@@ -370,3 +370,124 @@ body {
   font-size: 18px;
   margin-top: 6px;
 }
+.testimonials-section {
+  padding: 100px 0;
+}
+
+.testimonial-card {
+  max-width: 650px;
+  margin: 0 auto;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  padding: 40px;
+  border-radius: 24px;
+  text-align: center;
+  box-shadow: var(--shadow-dark);
+}
+
+.avatar-box {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--primary-color);
+  background-color: #0f172a;
+}
+
+.avatar-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.testimonial-content p {
+  font-size: 16px;
+  color: var(--heading-color);
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.testimonial-content h4 {
+  color: var(--heading-color);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.testimonial-content span {
+  font-size: 13px;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.testimonial-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background: var(--card-border);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.dot.active {
+  background: var(--primary-color);
+  width: 28px;
+  border-radius: 10px;
+}
+
+.contact-section {
+  padding: 100px 0;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 16px 20px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  color: var(--heading-color);
+  outline: none;
+  font-size: 15px;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  border-color: var(--primary-color);
+}
+
+.submit-btn {
+  padding: 16px;
+  background: var(--primary-gradient);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  opacity: 0.95;
+  transform: translateY(-2px);
+}
